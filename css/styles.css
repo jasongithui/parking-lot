@@ -84,6 +84,7 @@ button.contact {
     border-radius: 10px;
     text-decoration: none;
     transition: 2s ease-out;
+    border: unset;
 }
 button.contact:hover {
     color: white;
@@ -133,4 +134,37 @@ button.contact:hover {
       70% { top: -0.3em; }
       100% { top: 0; }
   }
+
+  /*----------------Body--------------*/
+
+
+  /*---section1----*/
+.section1 {
+    min-height: 45vh;
+    background-color: rgb(184, 179, 169);
+}
+
+.sec1 h1 {
+    font-family: 'Comic Neue', cursive;
+    font-size: 70px;
+    padding-top: 50px;
+}
+/*--contact button--*/
+button.contact2 {
+    font-size: 30px;
+    color: rgb(7, 7, 6);
+    background-color: rgb(129, 129, 127);
+    text-decoration: none;
+    transition: 2s ease-out;
+    border: unset;
+}
+button.contact2:hover {
+    color: white;
+    background-color: black;
+    transition: 1s ease-in;
+}
+
+
+
+
 
