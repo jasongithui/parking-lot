@@ -16,20 +16,26 @@ header {
     min-height: 100vh;
 }
 /*--Navbar links--*/
+.navbar {
+    background-color: white;
+    padding-bottom: 5px;
+    width: 100%;
+    top: 0;
+    
+}
 
 .list-nav a {
     text-decoration: none;
-    color: rgb(8, 6, 6);
+    color: rgb(84, 163, 10);
     letter-spacing: 5px;
     padding: 14px;
-    transition: 1.7s ease-out;
+    
     
 }
 
 .list-nav a:hover {
-    color: black;
-    background-color: rgb(177, 184, 88);
-    transition: 1s ease-in;
+    color: rgb(6, 6, 7);
+    border-bottom: 1px solid rgb(102, 173, 10);
 }
 
 .list-nav {
@@ -38,4 +44,9 @@ header {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
+}
+.fab {
+    font-size: 40px;
+    color: rgb(144, 160, 74);
+
 }
