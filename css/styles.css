@@ -50,3 +50,12 @@ header {
     color: rgb(144, 160, 74);
 
 }
+.navtext h2{
+    padding-right: 600px;
+    font-family: 'Merienda';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    color: rgb(90, 122, 59);
+} 
+
