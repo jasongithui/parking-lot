@@ -15,10 +15,6 @@ header {
     background-size: cover;
     min-height: 90.5vh;
 }
-
-
-
-
 /*--Navbar links--*/
 .navbar {
     position: sticky;
@@ -26,17 +22,13 @@ header {
     padding-bottom: 5px;
     width: 100%;
     top: 0;
-    
-
 }
 
 .list-nav a {
     text-decoration: none;
     color: rgb(84, 163, 10);
     letter-spacing: 5px;
-    padding: 14px;
-    
-    
+    padding: 14px;  
 }
 
 .list-nav a:hover {
@@ -91,8 +83,54 @@ button.contact {
     background-color: rgb(197, 194, 16);
     border-radius: 10px;
     text-decoration: none;
+    transition: 2s ease-out;
 }
 button.contact:hover {
-    color: ;
+    color: white;
+    background-color: black;
+    transition: 1s ease-in;
 }
+/*--icon down--*/
+
+.bounce {
+    padding-top: 30px;
+    font-size: 40px;
+    color: black;
+    display: inline-block;
+    position: relative;
+    -moz-animation: bounce 0.5s infinite linear;
+    -o-animation: bounce 1s infinite linear;
+    -webkit-animation: bounce 0.5s infinite linear;
+    animation: bounce 1s infinite linear;
+  }
+  @-webkit-keyframes bounce {
+      0% { top: 0; }
+      50% { top: -0.2em; }
+      70% { top: -0.3em; }
+      100% { top: 0; }
+  }
+  @-moz-keyframes bounce {
+      0% { top: 0; }
+      50% { top: -0.2em; }
+      70% { top: -0.3em; }
+      100% { top: 0; }
+  }
+  @-o-keyframes bounce {
+      0% { top: 0; }
+      50% { top: -0.2em; }
+      70% { top: -0.3em; }
+      100% { top: 0; }
+  }
+  @-ms-keyframes bounce {
+      0% { top: 0; }
+      50% { top: -0.2em; }
+      70% { top: -0.3em; }
+      100% { top: 0; }
+  }
+  @keyframes bounce {
+      0% { top: 0; }
+      50% { top: -0.2em; }
+      70% { top: -0.3em; }
+      100% { top: 0; }
+  }
 
