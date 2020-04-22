@@ -3,4 +3,39 @@ body,html {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
+  scroll-behavior: smooth;
+}
+/*--header image--*/
+header {
+    background-image: url(../background/head3.jpg);
+    opacity: 0.7;
+    filter: (opacity=50);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+/*--Navbar links--*/
+
+.list-nav a {
+    text-decoration: none;
+    color: rgb(8, 6, 6);
+    letter-spacing: 5px;
+    padding: 14px;
+    transition: 1.7s ease-out;
+    
+}
+
+.list-nav a:hover {
+    color: black;
+    background-color: rgb(177, 184, 88);
+    transition: 1s ease-in;
+}
+
+.list-nav {
+  text-decoration: none;
+  font-family: 'Poiret One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
 }
