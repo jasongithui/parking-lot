@@ -13,15 +13,21 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-height: 100vh;
+    min-height: 90.5vh;
 }
+
+
+
+
 /*--Navbar links--*/
 .navbar {
+    position: sticky;
     background-color: white;
     padding-bottom: 5px;
     width: 100%;
     top: 0;
     
+
 }
 
 .list-nav a {
@@ -37,7 +43,14 @@ header {
     color: rgb(6, 6, 7);
     border-bottom: 1px solid rgb(102, 173, 10);
 }
-
+.navtext h2{
+    padding-right: 600px;
+    font-family: 'Merienda';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    color: rgb(98, 122, 59);
+} 
 .list-nav {
   text-decoration: none;
   font-family: 'Poiret One';
@@ -45,17 +58,41 @@ header {
   font-weight: 400;
   font-display: swap;
 }
+/*--navbar icon--*/
 .fab {
     font-size: 40px;
     color: rgb(144, 160, 74);
-
 }
-.navtext h2{
-    padding-right: 600px;
-    font-family: 'Merienda';
+/*--Header section text--*/
+.container.top {
+    text-align: center;
+    padding-top: 120px;
+}
+.container.top h1 {
+    color: white;
+    font-family: 'Rajdhani';
     font-style: normal;
-    font-weight: 300;
+    font-weight: 200;
     font-display: swap;
-    color: rgb(90, 122, 59);
-} 
+    font-size: 60px;
+}
+#carPark {
+    color: yellowgreen;
+}
+#carpark h1{
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+button.contact {
+    font-size: 30px;
+    color: rgb(7, 7, 6);
+    background-color: rgb(197, 194, 16);
+    border-radius: 10px;
+    text-decoration: none;
+}
+button.contact:hover {
+    color: ;
+}
 
