@@ -176,9 +176,50 @@ button.contact2:hover {
 /*---section3----*/
 .section3 {
     background-color: white;
-    min-height: 60vh;
+    min-height: 70vh;
     
 }
+#second {
+    display: none;
+}
+.second-showing {
+    display: none;
+}
+.clickable {
+    cursor: pointer;
+    color: #0088cc;
+}
+
+#first {
+    display: none;
+}
+.first-showing {
+    display: none;
+}
+.click {
+    cursor: pointer;
+    color: #0088cc;
+  }
+  #another {
+    display: none;
+  }
+  .another-showing {
+  display: none;
+  }
+  .clic {
+    cursor: pointer;
+    color: #0088cc;
+  }
+  #last {
+      display: none;
+  }
+  .last-showing {
+      display: none;
+  }
+  .clicks {
+    cursor: pointer;
+    color: #0088cc;
+  }
 
 
 
