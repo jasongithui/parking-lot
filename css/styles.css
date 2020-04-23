@@ -248,15 +248,21 @@ button.contact2:hover {
     color: rgb(1, 1, 3);
     font-size: 20px;
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 10px;
+    padding-top: 21px;
+    padding-bottom: 8px;
 }
 #feat {
     text-align: center;
-    color: rgb(4, 57, 156);
-    font-size: 30px;
+    color: rgb(44, 82, 151);
+    font-size: 25px;
+    padding-top: 5px;
 }
-
+.container.feat {
+    border: 0.04px solid rgb(221, 220, 220);
+}
+#fit {
+    text-align: center;
+}
 
 
 
