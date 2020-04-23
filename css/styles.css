@@ -220,7 +220,10 @@ button.contact2:hover {
     cursor: pointer;
     color: #0088cc;
   }
-
+.container.box {
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
 
 
 

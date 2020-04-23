@@ -66,21 +66,21 @@
              <div class="row">
                 <div class="col-md-5 col-sm-5 text-right feature">
                     <div class="first-hidden">
-                        <span class="clickable">First Feature<i class="fas fa-desktop "></i></span>
+                        <span class="clickable">Choose your location<i class="fas fa-map-marker-alt"></i></span>
                    </div>
                      <div class="first-showing">
-                       <span class="clickable"><h3>First</h3></span>
-                         <p id="first">....</p>
+                       <span class="clickable"><h3>Location</h3></span>
+                         <p id="first">Using your Smartphone,you'l locate yourself from where you are.</p>
                      </div>
                </div>
                            <!--Second feature-->
                   <div class="col-md-5 col-sm-5 col-sm-offset-2 text-left feature">
                       <div class="another-hidden">
-                          <span class="click"><i class="fas fa-map-pin"></i></span>
+                          <span class="click"><i class="fas fa-street-view"></i>Get Drive Directions</span>
                       </div>
                         <div class="another-showing">
-                          <span class="click"><h3>Another</h3></span>
-                            <p id="another">....</p>
+                          <span class="click"><h3>Directions</h3></span>
+                            <p id="another">After chosing the parking lot you've found you can decide to get directions from our modified google maps software.</p>
                         </div>
                   </div>
             </div>
@@ -89,23 +89,23 @@
             <div class="row">
                 <div class="col-md-5 col-sm-5 text-right feature">
                     <div class="second-hidden">
-                     <span class="clic" ><i class="fas fa-street-view"></i>Second feature</span>
+                     <span class="clic" >Pin The Best spot<i class="fas fa-map-pin"></i></span>
                     </div>
                       <div class="second-showing">
-                        <span class="clic"><h3>second</h3></span>
-                        <p id="second"></p>
+                        <span class="clic"><h3>Best spot</h3></span>
+                        <p id="second">Using the latest modified google maps software,you can pin the best parking lot at your destined place</p>
                      </div>
                 </div>
                            <!--Last feature-->
                 <div class="col-md-5 col-sm-5 col-sm-offset-2 text-left feature">
                     <div class="last-hidden">
                       <h4>
-                     <span class="clicks"><i class="fa "></i>Last Feature</span>
+                     <span class="clicks"><i class="fas fa-parking"></i>Arrive at destination</span>
                       </h4>
                    </div>
                      <div class="last-showing">
-                       <span class="clicks"><h3>second</h3></span>
-                         <p id="last">....</p>
+                       <span class="clicks"><h3>Destination</h3></span>
+                         <p id="last">Arrive at your destined parking lot.</p>
                      </div>
                  </div>
             </div>
@@ -122,8 +122,35 @@
   <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d63820.732690606084!2d36.79265625169838!3d-1.2972024980358827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sparking%40lots%20in%20Nairobi%20Cbd%20area!5e0!3m2!1sen!2ske!4v1587572891894!5m2!1sen!2ske" width="1350" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 </footer>
 </section>
-
 <!--End of map section-->
+
+<section class="section5">
+    <div class="container-fluid" id="contact">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="container contact-us">
+                    <h1 class="wow jackInTheBox">CONTACT US</h1>
+                    <form id="feedbackForm">
+                        <div class="form-row">
+                            <div class="form-group col-md-6 wow jackInTheBox">
+                                <input type="text" class="form-control" id="userName" placeholder="Name...">
+                            </div>
+                            <div class="form-group col-md-6 wow jackInTheBox">
+                                <input type="email" class="form-control" id="inputEmail" placeholder="Email...">
+                            </div>
+                            <div class="form-group col-md-12 wow jackInTheBox">
+                                <textarea id="userMessage" name="message" class="form-control" placeholder="Your message here..." rows="8" required="required" data-error="Please, leave us a message."></textarea>
+                            </div>
+                            <div class="col-md-12 wow jackInTheBox" id="submit-button">
+                                <button onclick="submit()" id="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     <!--jquery-->
     <script src="js/jquery-3.5.0.min.js"></script>
     <!--bootstrap js-->
