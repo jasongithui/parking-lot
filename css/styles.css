@@ -1,5 +1,5 @@
 body,html {
-  font-family: 'Poiret One';
+  font-family: 'Comic Neue', cursive;
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -8,7 +8,7 @@ body,html {
 /*--header image--*/
 header {
     background-image: url(../background/head3.jpg);
-    opacity: 0.7;
+    opacity: 0.75;
     filter: (opacity=50);
     background-repeat: no-repeat;
     background-position: center;
@@ -68,6 +68,9 @@ header {
     font-display: swap;
     font-size: 60px;
 }
+ 
+    
+
 #carPark {
     color: yellowgreen;
 }
@@ -76,6 +79,7 @@ header {
     font-style: normal;
     font-weight: 400;
     font-display: swap;
+    font-family: 'Dancing Script', cursive;
 }
 button.contact {
     font-size: 30px;
@@ -224,6 +228,25 @@ button.contact2:hover {
     padding-top: 40px;
     padding-bottom: 60px;
 }
+/*------*/
+.locat {
+    font-size: 30px;
+}
+. {
+    border: 0.5px solid rgb(24, 21, 21);
+}
+.col-md-5 {
+    padding-bottom: 20px;
+}
+.pad {
+  padding-top: 30px;
+  padding-right:50px ;
+  padding-left: 50px;
+}
+.container.about {
+    
+}
+    
 
 
 
