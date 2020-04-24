@@ -263,6 +263,17 @@ button.contact2:hover {
 #fit {
     text-align: center;
 }
+/*----section5-------*/
+.section5 {
+    
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+}
+/*-----section6------*/
+.section6 {
+    color: grey;
+}
 
 
 
