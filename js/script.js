@@ -51,7 +51,7 @@ $(document).ready(function(){
     // $("button.proceed").click(function(){
     //   $("button.proceed").hide();
     //   $("#information").hide();
-    //   $("div.choise").slideDown(1000);
+    //   $("div.choise").slideDown(2000);
     // });
     $("button.proceed").click(function(event){
      let pcity = $(".city option:selected").val();
@@ -100,19 +100,19 @@ $(document).ready(function(){
       let security_value = psecurity.length*100;
       console.log("security value" + security_value);
   
-      if((pcity == "0") && (pvehicle == "0")){
+      if((pvehicle == "0") && (pduration == "0")){
         console.log("nothing selected");
         $("button.proceed").show();
         $("#information").show();
         $("div.choise").hide();
-        alert("Please select a Valid city Name and Vehicle"); 
+        alert("Please select a valid vehicle type and duration"); 
       }
       else{
         $("button.proceed").hide();
         $("#information").hide();
         $("div.choise").slideDown(1000);
       }
-      total = price + duration_price + security_value;
+      total = price + duration_price + security_value; 
       console.log(total);
       let checkoutTotal =0;
       checkoutTotal = checkoutTotal + total;
@@ -129,10 +129,10 @@ $(document).ready(function(){
         let pvehicle = $("#vehicle option:selected").val();
         let pduration = $("#c option:selected").val();
         let psecurity = [];
-        $.each($("input[name='toppings']:checked"), function(){            
+        $.each($("input[name='security']:checked"), function(){            
             psecurity.push($(this).val());
         });
-        console.log(ptopping.join(", "));
+        console.log(psecurity.join(", "));
         switch(pvehicle){
           case "0":
             price =0;
@@ -177,20 +177,20 @@ $(document).ready(function(){
         // constractor function
         var newOrder = new GetVehicle(pcity, pvehicle, pduration,psecurity,total);
   
-        $("#ordersmade").append('<tr><td id="city">'+newOrder.name +'</td><td id="vehicle">' + newOrder.size + '</td><td id="duration">'+newOrder.crust + '</td><td id="security">'+newOrder.security+'</td><td id="totals">'+newOrder.total+'</td></tr>');
+        $("#ordersmade").append('<tr><td id="city">'+newOrder.city +'</td><td id="vehicle">' + newOrder.vehicle + '</td><td id="duration">'+newOrder.duration + '</td><td id="security">'+newOrder.security+'</td><td id="totals">'+newOrder.total+'</td></tr>');
         console.log(newOrder);
     });
     // Checkout button
     $("button#checkout").click(function(){ 
       $("button#checkout").hide();
-      $("button.addPizza").hide();
+      $("button.addCity").hide();
       $("button.deliver").slideDown(1000);
       $("#addedprice").slideDown(1000);
       console.log("Your total parking fee is sh. "+checkoutTotal);
       $("#booktotal").append("Your fee is sh. "+checkoutTotal);
     });
 
-    // home delivery button
+    // Booking button
     $("button.deliver").click(function(){
       $(".booktable").hide();
       $(".choise h2").hide();

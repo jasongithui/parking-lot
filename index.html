@@ -165,7 +165,7 @@
                         <option value="Sunchoke City">Kisumu City</option>
                         <option value="Buffalo City">Kiambu City</option>
                       </select>
-                      <label for="select" class="select">Select your Vehicle</label>
+                      <label for="vehicle" class="select">Select your Vehicle</label>
                         <select class="browser-default custom-select custom-select-md mb-3" id="vehicle">
                           <option selected value="0">price per size</option>
                           <option value="large">Truck -- sh. 200</option>
@@ -179,10 +179,10 @@
                             <option value="60min">60min -- sh. 140</option>
                             <option value="90min">90min -- sh. 180</option>
                           </select>
-                          <label for="Toppings" class="select">Select Your preferred level of security...@100 per increase</label><br>
+                          <label for="Security" class="select">Select Your preferred level of security...@100 per increase</label><br>
                              <div class="custom-control custom-checkbox custom-control-inline">
-                               <input type="checkbox" class="custom-control-input" id="Sausage" value="Sausage" name="toppings">
-                                 <label class="custom-control-label" for="Sausage">Regular</label>
+                               <input type="checkbox" class="custom-control-input" id="Regular" value="Regular" name="security">
+                                 <label class="custom-control-label" for="Regular">Regular</label>
                              </div>
                                <div class="custom-control custom-checkbox custom-control-inline">
                                  <input type="checkbox" class="custom-control-input" id="Bacon" value="Bacon" name="toppings">
@@ -208,7 +208,7 @@
                      <div class="choise">
                        <h2>Your Book is:</h2>
                          <div id="your-orders">
-                           <table class="table table-sm  pizzatable">
+                           <table class="table table-sm  booktable">
                     <thead>
                       <tr>
                         <th scope="col">City</th>
@@ -220,21 +220,21 @@
                     </thead>
                     <tbody id="ordersmade">
                       <tr>
-                        <td id="pizzaname"></td>
-                        <td id="pizzasize"></td>
-                        <td id="pizzacrust"></td>
-                        <td id="pizzatopping"></td>
+                        <td id="city"></td>
+                        <td id="vehicle"></td>
+                        <td id="duration"></td>
+                        <td id="security"></td>
                         <td id="totals"></td>
                       </tr>                  
                     </tbody>
                   </table>
-                  <p id="pizzatotal"></p>
+                  <p id="booktotal"></p>
                   <p id="totalbill"></p> 
                   <p id="addedprice">Thank you for your services.</p>
                   <p id="finallmessage"></p>
                 </div>
                  
-                <button class="btn btn-white addPizza"></button>
+                <button class="btn btn-white addCity"></button>
               
                 
                   <button class="btn btn-white" id="checkout">Checkout</button>
