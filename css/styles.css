@@ -284,6 +284,93 @@ button.contact2:hover {
     background-attachment: fixed;
     
 }
+.col-md-4{
+    border-radius: 10%;
+    padding: 10px;
+  }
+  .delivery{
+    display: none;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .container.order {
+      border: solid 0.5px grey;
+      border-radius: 30px;
+      background-color: rgb(5, 5, 5) ;
+      
+  }
+  .padd-order {
+      padding-top: 50px;
+      padding-bottom: 70px;
+      opacity: 0.9 ;
+      filter:(opacity=50);
+  }
+.order-now {
+    color: rgb(199, 170, 6);
+    font-size: 50px;
+    font-family: 'Indie Flower';
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+.order-next {
+    color: white;
+    text-align: center;
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+.select {
+    color: rgb(122, 128, 39);
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    padding-top: 10px;
+}
+
+#information {
+    color:white;
+    font-family: 'Cormorant Garamond';
+    font-style: italic;
+    font-weight: 500;
+    font-display: swap;
+    font-size: 23px;
+}
+.choise {
+    color: rgb(136, 150, 55);
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+.custom-control-label {
+    color:white;
+}
+.pizzatable {
+    color:white;
+}
+#addedprice {
+    font-size: 25px;
+}
+.btn-white {
+    color: rgb(163, 8, 8);
+    border: solid 1px black;
+}
+.btn-grey {
+    color:rgb(7, 6, 6);
+    border: solid 2px black;
+    background-color: blanchedalmond;
+    transition: 2s ease-out;
+}
+.btn-grey:hover {
+    color:rgb(218, 205, 205);
+    background-color: rgb(7, 7, 7);
+    transition: 0.5s ease-in;
+}
 
 
 

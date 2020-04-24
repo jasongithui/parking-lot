@@ -37,13 +37,13 @@ $(document).ready(function() {
 });
 
 //Order section//
-var price , crust_price, topping_price ;
+var price , city_price, vehicle_price ;
 let total = 0;
-function Getpizza( name,size,crust,topping, total ){
-  this.name = name;
-  this.size = size;
-  this.crust = crust;
-  this.topping = topping;
+function GetVehicle( city,vehicle,duration,security, total ){
+  this.city = city;
+  this.vehicle = vehicle;
+  this.duration = duration;
+  this.security = security;
   this.total = total;
 }
 // proceed button
@@ -54,130 +54,130 @@ $(document).ready(function(){
     //   $("div.choise").slideDown(1000);
     // });
     $("button.proceed").click(function(event){
-     let pname = $(".name option:selected").val();
-     let psize = $("#size option:selected").val();
-     let pcrust = $("#crust option:selected").val();
-     let ptopping = [];
-     $.each($("input[name='toppings']:checked"), function(){            
-         ptopping.push($(this).val());
+     let pcity = $(".city option:selected").val();
+     let pvehicle = $("#vehicle option:selected").val();
+     let pduration = $("#duration option:selected").val();
+     let psecurity = [];
+     $.each($("input[name='security']:checked"), function(){            
+         psecurity.push($(this).val());
      });
-     console.log(ptopping.join(", "));
+     console.log(psecurity.join(", "));
   
-     switch(psize){
+     switch(pvehicle){
       case "0":
         price =0;
       break;
-      case "large":
-         price = 1200;
+      case "Truck":
+         price = 200;
          console.log(price);
        break;
-       case "medium":
-         price = 850;
+       case "Suv":
+         price = 100;
          console.log("The price is "+price);
        break;
-       case "small":
-         price = 600;
+       case "Saloon":
+         price = 50;
          console.log(price);
        default:
          console.log("error"); 
      }
-     switch(pcrust){
+     switch(pduration){
         case "0":
-          crust_price = 0;
+          duration_price = 0;
         break;
-        case "Crispy":
-          crust_price = 200;
+        case "30min":
+          duration_price = 70;
         break;
-        case "Stuffed":
-          crust_price = 250;
+        case "60min":
+          duration_price = 140;
         break;
-        case "Gluten-free":
-          crust_price = 180;
+        case "90min":
+          duration_price = 180;
         break;
         default:
           console.log("No price"); 
       }
-      let topping_value = ptopping.length*50;
-      console.log("toppins value" + topping_value);
+      let security_value = psecurity.length*100;
+      console.log("security value" + security_value);
   
-      if((psize == "0") && (pcrust == "0")){
+      if((pcity == "0") && (pvehicle == "0")){
         console.log("nothing selected");
         $("button.proceed").show();
         $("#information").show();
         $("div.choise").hide();
-        alert("Please select pizza size and crust"); 
+        alert("Please select a Valid city Name and Vehicle"); 
       }
       else{
         $("button.proceed").hide();
         $("#information").hide();
         $("div.choise").slideDown(1000);
       }
-      total = price + crust_price + topping_value;
+      total = price + duration_price + security_value;
       console.log(total);
       let checkoutTotal =0;
       checkoutTotal = checkoutTotal + total;
   
-      $("#pizzaname").html($(".name option:selected").val());
-      $("#pizzasize").html( $("#size option:selected").val());
-      $("#pizzacrust").html($("#crust option:selected").val());
-      $("#pizzatopping").html(ptopping.join(", "));
+      $("#city").html($(".city option:selected").val());
+      $("#vehicle").html( $("#vehicle option:selected").val());
+      $("#duration").html($("#duration option:selected").val());
+      $("#security").html(psecurity.join(", "));
       $("#totals").html(total);
       
-  // Add pizza button
-      $("button.addPizza").click(function(){
-        let pname = $(".name option:selected").val();
-        let psize = $("#size option:selected").val();
-        let pcrust = $("#crust option:selected").val();
-        let ptopping = [];
+  //
+      $("button.addCity").click(function(){
+        let pcity = $(".city option:selected").val();
+        let pvehicle = $("#vehicle option:selected").val();
+        let pduration = $("#c option:selected").val();
+        let psecurity = [];
         $.each($("input[name='toppings']:checked"), function(){            
-            ptopping.push($(this).val());
+            psecurity.push($(this).val());
         });
         console.log(ptopping.join(", "));
-        switch(psize){
+        switch(pvehicle){
           case "0":
             price =0;
           break;
-          case "large":
-             price = 1200;
+          case "Truck":
+             price = 200;
              console.log(price);
            break;
-           case "medium":
-             price = 850;
+           case "Suv":
+             price = 100;
              console.log("The price is "+price);
            break;
-           case "small":
-             price = 600;
+           case "Saloon":
+             price = 50;
              console.log(price);
            default:
              console.log("error"); 
          }
-         switch(pcrust){
+         switch(pduration){
             case "0":
-              crust_price = 0;
+              duration_price = 0;
             break;
-            case "Crispy":
-              crust_price = 200;
+            case "30min":
+              duration_price = 70;
             break;
-            case "Stuffed":
-              crust_price = 150;
+            case "60min":
+              duration_price = 140;
             break;
-            case "Gluten-free":
-              crust_price = 180;
+            case "90min":
+              duration_price = 180;
             break;
             default:
               console.log("No price"); 
           }
-          let topping_value = ptopping.length*50;
-          console.log("toppins value" + topping_value);
-          total = price + crust_price + topping_value;
+          let security_value = psecurity.length*100;
+          console.log("security value" + security_value);
+          total = price + duration_price + security_value;
           console.log(total);
   
           checkoutTotal = checkoutTotal + total;
           console.log(checkoutTotal);
         // constractor function
-        var newOrder = new Getpizza(pname, psize, pcrust,ptopping,total);
+        var newOrder = new GetVehicle(pcity, pvehicle, pduration,psecurity,total);
   
-        $("#ordersmade").append('<tr><td id="pizzaname">'+newOrder.name +'</td><td id="pizzasize">' + newOrder.size + '</td><td id="pizzacrust">'+newOrder.crust + '</td><td id="pizzatopping">'+newOrder.topping+'</td><td id="totals">'+newOrder.total+'</td></tr>');
+        $("#ordersmade").append('<tr><td id="city">'+newOrder.name +'</td><td id="vehicle">' + newOrder.size + '</td><td id="duration">'+newOrder.crust + '</td><td id="security">'+newOrder.security+'</td><td id="totals">'+newOrder.total+'</td></tr>');
         console.log(newOrder);
     });
     // Checkout button
@@ -186,31 +186,31 @@ $(document).ready(function(){
       $("button.addPizza").hide();
       $("button.deliver").slideDown(1000);
       $("#addedprice").slideDown(1000);
-      console.log("Your total bills is sh. "+checkoutTotal);
-      $("#pizzatotal").append("Your bill is sh. "+checkoutTotal);
+      console.log("Your total parking fee is sh. "+checkoutTotal);
+      $("#booktotal").append("Your fee is sh. "+checkoutTotal);
     });
 
     // home delivery button
     $("button.deliver").click(function(){
-      $(".pizzatable").hide();
+      $(".booktable").hide();
       $(".choise h2").hide();
-      $(".delivery").slideDown(1000);
+      $(".delivery").slideDown(2000);
       $("#addedprice").hide();
       $("button.deliver").hide();
-      $("#pizzatotal").hide();
-      let deliceryamount= checkoutTotal+150;
-      console.log("You will pay sh. "+deliceryamount+" on delivery");
-      $("#totalbill").append("Your bill plus delivery fee is: "+deliceryamount);
+      $("#booktotal").hide();
+      let deliceryamount= checkoutTotal+100;
+      console.log("You will pay sh. "+deliceryamount+" for tax");
+      $("#totalbill").append("Your parking fee plus tax fee is: "+deliceryamount);
     });
 
     // when one clicks place order button
     $("button#final-order").click(function(event){
       event.preventDefault();
 
-      $("#pizzatotal").hide();
+      $("#booktotal").hide();
       $(".delivery").hide();
       $("button#final-order").hide();
-      let deliceryamount= checkoutTotal+150;
+      let deliceryamount= checkoutTotal+100;
       console.log("Final Bill is: "+deliceryamount);
       let person = $("input#name").val();
       let phone = $("input#phone").val();
@@ -218,12 +218,12 @@ $(document).ready(function(){
 
       if ($("input#name").val() && $("input#phone").val() && $("input#location").val()!=""){
   
-        $("#finallmessage").append(person+", We have recieved your order and it will be delivered to you at "+location+ ". Prepare sh. "+deliceryamount);
+        $("#finallmessage").append(person+", We have recieved your book order done at "+location+ ". Prepare sh. "+deliceryamount);
         $("#totalbill").hide();
         $("#finallmessage").slideDown(1200);
       }
       else {
-        alert("Please fill in the details for delivery!");
+        alert("Please fill in the details for book completion!");
         $(".delivery").show();
         $("button#final-order").show();
       }
