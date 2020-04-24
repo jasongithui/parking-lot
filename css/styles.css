@@ -51,7 +51,7 @@ header {
   font-display: swap;
 }
 /*--navbar icon--*/
-.fab {
+.fab.fa-ups{
     font-size: 40px;
     color: rgb(144, 160, 74);
 }
@@ -371,6 +371,55 @@ button.contact2:hover {
     background-color: rgb(7, 7, 7);
     transition: 0.5s ease-in;
 }
+
+/*------section8--------*/
+.section8 {
+    background-color: black;
+    min-height: 259px;
+}
+
+.icon {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 25px;
+    color: white;
+}
+.social {
+    padding-left: 42%;
+    font-size: 29px;
+    text-decoration: none;
+}
+.social a {
+    text-decoration: none;
+    color: white;
+}
+.fab{
+    transition: 2s ease-out;
+}
+.fab:hover {
+    color:rgb(147, 172, 5);
+    transition: 0.4s ease-in;
+    text-decoration: none;
+}
+.copy {
+    padding-left: 40%;
+    color: wheat;
+    font-size: 15px;
+    padding-top: 70px;
+    font-size: 20px;
+}
+.foot {
+    font-family: 'Amatic SC';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    font-size: 50px;
+    padding-top: 40px;
+    padding-bottom: 15px;
+}
+
+
 
 
 
